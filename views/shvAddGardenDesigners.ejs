@@ -1,0 +1,103 @@
+<%- include('layout/header')%>
+    <div class="container">
+        <div>
+            <div>
+                <h3 class="container mt-5 d-flex justify-content-center"> Add Garden Designer</h3>
+
+                <form action="/addAdminGD" method="post" id="ädd-form" enctype="multipart/form-data">
+                    <div class="form-group row mt-3">
+                        <label for="architect" class="col-sm-2 col-form-label"> Garden Designer's Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="Name" placeholder="Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group row mt-3">
+                        <label for="Email" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" name="Email" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="form-group row mt-3">
+                        <label for="Phone" class="col-sm-2 col-form-label">Mobile Number</label>
+                        <div class="col-sm-8">
+                            <input type="mobile" class="form-control" name="Phone" placeholder="mobile">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row mt-3">
+                        <label for="Qualifications" class="col-sm-2 col-form-label"> Qualifications</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="Qualifications" placeholder="Qualifications">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row mt-3">
+                        <label for="ProfilePic" class="col-sm-2 col-form-label"> Profile picture</label>
+                        <div class="col-sm-8">
+                            <input type="file" class="form-control" name="ProfilePic" placeholder="Select Image">
+                        </div>
+                    </div>
+
+                    <div class="form-group row mt-3">
+                        <label for="FirstProjectPic" class="col-sm-2 col-form-label"> Project 01 Image</label>
+                        <div class="col-sm-8">
+                            <input type="file" class="form-control" name="FirstProjectPic" placeholder="Select Image">
+                        </div>
+                    </div>
+
+                    <div class="form-group row mt-3">
+                        <label for="FirstProjectDesc" class="col-sm-2 col-form-label">Project 01 Description </label>
+                        <div class="col-sm-8">
+                            <textarea class="form-control" class="form-control" name="FirstProjectDesc"
+                                placeholder="First Project Description" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group row mt-3">
+                        <label for="SecondProjectPic" class="col-sm-2 col-form-label">Project 02 Image</label>
+                        <div class="col-sm-8">
+                            <input type="file" class="form-control" name="SecondProjectPic" placeholder="Select Image">
+                        </div>
+                    </div>
+
+                    <div class="form-group row mt-3">
+                        <label for="SecondProjectDesc" class="col-sm-2 col-form-label">Project 02 Description</label>
+                        <div class="col-sm-8">
+                            <textarea class="form-control" class="form-control" name="SecondProjectDesc"
+                                placeholder="Second Project Description" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group row mt-3">
+
+                        <label for="ThirdProjectPic" class="col-sm-2 col-form-label">Project 03 Image</label>
+                        <div class="col-sm-8">
+                            <input type="file" class="form-control" name="ThirdProjectPic" placeholder="Select Image">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row mt-3">
+                        <label for="ThirdProjectDesc" class="col-sm-2 col-form-label">Project 03 Description</label>
+                        <div class="col-sm-8">
+                            <textarea class="form-control" class="form-control" name="ThirdProjectDesc"
+                                placeholder="Third Project Description" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <center>
+                    <button type="submit" class="btn btn-success col-sm-1 mt-3"><b>Submit</b></button>
+                    </center>
+                </form>
+            <center>
+                <a href='/addAdminGD'><button class='btn btn-info col-sm-1 mt-3'><b>Clear</b></button></a>
+            </center>
+            </div>
+        </div>
+    </div>
+
+
+    <%- include('layout/footer')%>

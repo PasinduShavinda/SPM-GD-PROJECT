@@ -1,0 +1,53 @@
+<%- include('layout/header')%>
+             <!-- Blog Start -->
+        <div class="blog">
+        <div class="container">
+            <div class="section-header text-center">
+                <p> <%= adminGds.Name %></p>
+                <h2> <h3 class="container"> Latest Projects Done By <%= adminGds.Name %></h3></h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="/<%= adminGds.FirstProjectPic %>" width="100" class="thumbnail mt-1"/>
+                        </div>
+                        <div class="blog-text">
+                            <p>
+                                <%= adminGds.FirstProjectDesc %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                        <img src="/<%= adminGds.SecondProjectPic %>" width="100" class="thumbnail mt-1"/>
+                        </div>
+                        <div class="blog-text">
+                            <p>
+                                <%= adminGds.SecondProjectDesc %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="/<%= adminGds.ThirdProjectPic %>" width="100" class="thumbnail mt-1"/>
+                        </div>
+                        <div class="blog-text">
+                            <p>
+                                <%= adminGds.ThirdProjectDesc %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+</div>
+</div>
+</div>
+      
+<%- include('layout/footer')%> 
